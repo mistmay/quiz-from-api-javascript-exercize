@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Giuseppe Marchesiello">
+    <meta name="description" content="Exercize Html Javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Quiz API</title>
+</head>
+
+<body>
+    <form id="generate-form">
+        <h1>Generate Custom Quiz:</h1>
+        <div>
+            <label for="number">Number of Questions:</label>
+            <input type="number" id="number" name="number" min="1" max="50" value="1" required>
+        </div>
+        <div id="category-div">
+            <label for="category">Category:</label>
+            <select id="category" name="category" required></select>
+        </div>
+        <div>
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="" selected>Any Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div>
+            <label for="type">Type</label>
+            <select id="type" name="type">
+                <option value="" selected>Any Type</option>
+                <option value="multiple">Multiple Choiche</option>
+                <option value="boolean">True / False</option>
+            </select>
+        </div>
+        <button type="submit">Generate</button>
+    </form>
+    <section id="questions">
+        <form id="questions-form">
+            <button type="Submit">Submit</button>
+        </form>
+    </section>
+    <script src="assets/js/index.js" type="module"></script>
+</body>
+
+</html>
